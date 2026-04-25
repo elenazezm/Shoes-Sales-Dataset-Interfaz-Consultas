@@ -107,7 +107,7 @@ class AppWindow(ctk.CTk):
             self._poblar_tabla(df)
             self.lbl_just.configure(state="normal")
             self.lbl_just.delete("0.0", "end")
-            self.lbl_just.insert("0.0", f"💡 {justificacion}")
+            self.lbl_just.insert("0.0", f{justificacion}")
             self.lbl_just.configure(state="disabled")
         except Exception as e:
             self.lbl_titulo.configure(text=f"Error: {e}")
